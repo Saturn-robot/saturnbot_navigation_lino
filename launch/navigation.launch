@@ -7,7 +7,7 @@
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
   <!-- AMCL -->
-  <include file="$(find saturnbot_navigation_lino)/launch/astra_amcl.launch"/>
+  <include file="$(find saturnbot_navigation_lino)/launch/amcl.launch"/>
 
   <!-- Move base -->
   <include file="$(find saturnbot_navigation_lino)/launch/move_base.launch"/>

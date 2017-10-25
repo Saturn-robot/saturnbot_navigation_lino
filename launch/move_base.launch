@@ -1,6 +1,7 @@
 <launch>
   <!-- velocity_smoother.launch.xml -->
   <include file="$(find saturnbot_navigation_lino)/launch/velocity_smoother.launch"/>
+
   <arg name="base_frame_id"   default="base_footprint"/>
 
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
